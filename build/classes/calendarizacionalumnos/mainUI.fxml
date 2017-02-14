@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendarizacionalumnos.MainUIController">
+   <children>
+      <Label layoutX="217.0" layoutY="14.0" text="Calendarizacion de horarios" textFill="#900000">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <ListView fx:id="listViewCatalogo" layoutX="14.0" layoutY="88.0" prefHeight="300.0" prefWidth="200.0" />
+      <ListView fx:id="listViewSeleccionado" layoutX="250.0" layoutY="88.0" prefHeight="300.0" prefWidth="200.0" />
+      <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar" />
+      <TextField layoutX="64.0" layoutY="59.0" prefHeight="27.0" prefWidth="147.0" />
+      <Button layoutX="214.0" layoutY="88.0" mnemonicParsing="false" onAction="#agregarMateria" prefHeight="27.0" prefWidth="36.0" text="&gt;&gt;" />
+      <Button layoutX="214.0" layoutY="115.0" mnemonicParsing="false" onAction="#quitarMateria" prefHeight="27.0" prefWidth="36.0" text="&lt;&lt;" />
+      <Button layoutX="327.0" layoutY="59.0" mnemonicParsing="false" onAction="#schedule" prefHeight="27.0" prefWidth="123.0" text="Generar Horario" />
+      <ListView fx:id="listViewSchedule" layoutX="487.0" layoutY="59.0" prefHeight="300.0" prefWidth="325.0" />
+      <Button layoutX="736.0" layoutY="359.0" mnemonicParsing="false" onAction="#nextSchedule" text="Siguiente" />
+      <Button layoutX="659.0" layoutY="359.0" mnemonicParsing="false" onAction="#prevSchedule" text="Anterior" />
+      <Label fx:id="resultLabel" layoutX="487.0" layoutY="364.0" prefHeight="17.0" prefWidth="42.0" text="0" />
+   </children>
+</AnchorPane>

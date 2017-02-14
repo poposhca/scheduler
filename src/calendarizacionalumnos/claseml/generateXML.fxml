@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="274.0" prefWidth="463.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="calendarizacionalumnos.claseml.GenerateXMLController">
+   <children>
+      <Label layoutX="32.0" layoutY="28.0" text="GENERADOR XML" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="75.0" text="Nombre Clase" />
+      <Label layoutX="32.0" layoutY="122.0" text="Hora Inicio" />
+      <TextField layoutX="127.0" layoutY="70.0" prefHeight="27.0" prefWidth="287.0" />
+      <TextField layoutX="127.0" layoutY="117.0" prefHeight="27.0" prefWidth="87.0" />
+      <Label layoutX="248.0" layoutY="122.0" text="Hora Fin" />
+      <TextField layoutX="325.0" layoutY="117.0" prefHeight="27.0" prefWidth="87.0" />
+      <CheckBox layoutX="32.0" layoutY="167.0" mnemonicParsing="false" text="lunes" />
+      <CheckBox layoutX="94.0" layoutY="167.0" mnemonicParsing="false" text="martes" />
+      <CheckBox layoutX="172.0" layoutY="167.0" mnemonicParsing="false" text="miercoles" />
+      <CheckBox layoutX="262.0" layoutY="167.0" mnemonicParsing="false" text="jueves" />
+      <CheckBox layoutX="334.0" layoutY="167.0" mnemonicParsing="false" text="viernes" />
+      <Button layoutX="319.0" layoutY="217.0" mnemonicParsing="false" text="Generar XML" />
+   </children>
+</AnchorPane>
